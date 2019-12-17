@@ -1,0 +1,30 @@
+{
+    "license": "MIT",
+    "scripts": {
+        "dev-server": "encore dev-server",
+        "dev": "encore dev",
+        "watch": "encore dev --watch",
+        "build": "encore production"
+    },
+    "dependencies": {
+        "@symfony/webpack-encore": "^0.28.0",
+        "autoprefixer": "^9.1.5",
+        "avris-daemonise": "^0.0.2",
+        "bootstrap": "^4.1.3",
+        "clipboard": "^2.0.4",
+        "copy-webpack-plugin": "^4.0",
+        "dotenv": "^6.2.0",
+        "html-webpack-plugin": "^3.2.0",
+        "imports-loader": "^0.8.0",
+        "node-sass": "^4.11.0",
+        "postcss-loader": "^3.0.0",
+        "sass-loader": "^7.0.3",
+        "twemoji": "^11.0.1",
+        "vue": "^2.6",
+        "vue-i18n": "^8.1.1",
+        "vue-loader": "^15",
+        "vue-matomo": "^3.9.1-2",
+        "vue-router": "^3.0.1",
+        "vue-template-compiler": "^2.6"
+    }
+}

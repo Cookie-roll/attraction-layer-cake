@@ -1,0 +1,7 @@
+$web-font-path: "https://fonts.googleapis.com/css?family=Corben:400" !default;
+@import url($web-font-path);
+$font-family-sans-serif: Corben, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+$primary: #910;
+
+@import "~bootstrap/scss/bootstrap";
