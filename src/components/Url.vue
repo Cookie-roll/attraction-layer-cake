@@ -1,11 +1,30 @@
 <template>
     <div>
-        <div v-if="url" class="input-group">
-            <input v-model="url" readonly class="form-control" id="url">
-            <div class="input-group-append">
-                <button class="btn btn-primary btn-copy" data-clipboard-target="#url" :title="$t('url.copy')">
-                    <Twemoji>📋</Twemoji>
-                </button>
+        <div v-if="url">
+            <div class="input-group">
+                <input v-model="url" readonly class="form-control" id="url">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary btn-copy" data-clipboard-target="#url" :title="$t('url.copy')">
+                        <Twemoji>📋</Twemoji>
+                    </button>
+                </div>
+            </div>
+
+            <div class="btn-group btn-block mt-3">
+                <a :href="`http://www.facebook.com/sharer.php?t=${encodeURIComponent($t('share.text', {code}))}&amp;u=${encodeURIComponent(url)}`"
+                   target="_blank" rel="noopener"
+                   class="btn btn-outline-secondary"
+                >
+                    <span class="fab fa-facebook"></span>
+                    {{ $t('share.facebook') }}
+                </a>
+                <a :href="`https://twitter.com/share?text=${encodeURIComponent($t('share.text', {code}))}&amp;url=${encodeURIComponent(url)}`"
+                    target="_blank" rel="noopener"
+                    class="btn btn-outline-secondary"
+                >
+                    <span class="fab fa-twitter"></span>
+                    {{ $t('share.twitter') }}
+                </a>
             </div>
         </div>
         <p class="mb-0" v-else>
@@ -20,6 +39,7 @@
     export default {
         props: {
             url: {required: true},
+            code: {required: true},
         },
         mounted() {
             new ClipboardJS('.btn-copy');

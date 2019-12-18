@@ -2,7 +2,7 @@
     <Layout>
         <template v-slot:side>
             <Cake :attraction="attraction" :relationship="relationship" :orientation="orientation"/>
-            <Url :url="url"/>
+            <Url :url="url" :code="code"/>
         </template>
 
         <template v-slot:col1>

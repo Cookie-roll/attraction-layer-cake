@@ -71,6 +71,10 @@ module.exports = {
     'url.empty': 'Select on option in all three columns to generate a link.',
     'url.copy': 'Copy to clipboard',
 
+    'share.text': 'My attraction type is {code}, what\'s yours?',
+    'share.facebook': 'Share on Facebook',
+    'share.twitter': 'Share on Twitter',
+
     'privacy.header': 'Privacy',
     'privacy.noData': 'All the information about the options you have selected are encoded in the URL and are not stored anywhere.',
     'privacy.tracking': 'I use Matomo to analyse traffic on the website. All visitor data anonymised.',
