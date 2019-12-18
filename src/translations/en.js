@@ -1,7 +1,7 @@
 module.exports = {
     'title': 'Attraction Layer Cake',
-    'description': 'foo',  // TODO
-    'keywords': 'foo, bar, baz',  // TODO
+    'description': 'Describe your attraction on three axes: attraction type, relationship type and orientation type.',
+    'keywords': 'attraction, relationship, orientation, sexuality, sexual orientation, scale, kinsey scale, asexual, monogamy, polyamory',
 
     'footer.author': 'Made with ❤ by',
     'footer.base': 'based on',

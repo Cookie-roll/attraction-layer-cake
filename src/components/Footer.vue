@@ -5,7 +5,7 @@
                 {{ $t('footer.author') }}
                 <a href="https://avris.it" target="_blank" rel="noopener" class="text-nowrap">Avris 🇪🇺 🏳️‍🌈</a>
                 {{ $t('footer.base') }}
-                <a href="https://imgur.com/gallery/YAGLE" target="_blank" rel="noopener" class="text-nowrap">💡 {{ $t('footer.diagram') }}</a>.
+                <a href="https://imgur.com/gallery/YAGLE" target="_blank" rel="noopener" class="text-nowrap">💡 {{ $t('footer.diagram') }}</a> 😍
             </Twemoji>
         </div>
         <div class="mt-3 mt-md-0">
