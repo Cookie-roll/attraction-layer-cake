@@ -15,14 +15,12 @@
                    target="_blank" rel="noopener"
                    class="btn btn-outline-secondary"
                 >
-                    <span class="fab fa-facebook"></span>
                     {{ $t('share.facebook') }}
                 </a>
                 <a :href="`https://twitter.com/share?text=${encodeURIComponent($t('share.text', {code}))}&amp;url=${encodeURIComponent(url)}`"
                     target="_blank" rel="noopener"
                     class="btn btn-outline-secondary"
                 >
-                    <span class="fab fa-twitter"></span>
                     {{ $t('share.twitter') }}
                 </a>
             </div>
