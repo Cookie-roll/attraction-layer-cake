@@ -1,11 +1,11 @@
 <template>
     <div class="flex-grow-1 p-4">
         <div class="row">
-            <div class="col-12 d-sm-none">
+            <div class="col-12 d-xl-none">
                 <h1 class="mb-3">{{ $t('title') }}</h1>
             </div>
             <div class="col-12 col-sm-6 col-xl-3 offset-xl-0 sticky-top bg-white border-xs-bottom pb-3 h-100">
-                <h1 class="mb-3 d-none d-sm-block">
+                <h1 class="mb-3 d-none d-xl-block">
                     <router-link :to="{name: 'home'}" v-if="linkTitle">
                         {{ $t('title') }}
                     </router-link>
