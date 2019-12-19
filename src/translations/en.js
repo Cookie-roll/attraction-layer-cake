@@ -1,6 +1,6 @@
 module.exports = {
     'title': 'Attraction Layer Cake',
-    'description': 'Describe your attraction on three axes: attraction type, relationship type and orientation type.',
+    'description': 'Our sexuality is more complex than just straight/bi/gay. Here you can describe it on three axes: attraction type, relationship type and orientation type.',
     'keywords': 'attraction, relationship, orientation, sexuality, sexual orientation, scale, kinsey scale, asexual, monogamy, polyamory',
 
     'footer.author': 'Made with ❤ by',
