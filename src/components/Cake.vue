@@ -2,9 +2,9 @@
     <svg class="w-100">
         <defs>
             <g id="box">
-                <polygon points="0,1 2,0 4,1 2,2" style="fill: hsla(var(--box-h, 0), var(--box-s, 0%), calc(var(--box-l, 80%) + 10%), var(--box-a, 1)); stroke: black; stroke-width: 0.025; stroke-opacity: var(--box-a);"/>
-                <polygon points="0,1 2,2 2,4 0,3" style="fill: hsla(var(--box-h, 0), var(--box-s, 0%), var(--box-l, 80%), var(--box-a, 1)); stroke: black; stroke-width: 0.025; stroke-opacity: var(--box-a);"/>
-                <polygon points="4,1 2,2 2,4 4,3" style="fill: hsla(var(--box-h, 0), var(--box-s, 0%), calc(var(--box-l, 80%) - 10%), var(--box-a, 1)); stroke: black; stroke-width: 0.025; stroke-opacity: var(--box-a);"/>
+                <polygon points="0,1 2,0 4,1 2,2" style="fill: hsla(var(--box-h, 0), var(--box-s, 0%), calc(var(--box-l, 80%) + 10%), var(--box-a-top, 1)); stroke: black; stroke-width: 0.025; stroke-opacity: var(--box-a);"/> <!-- top -->
+                <polygon points="0,1 2,2 2,4 0,3" style="fill: hsla(var(--box-h, 0), var(--box-s, 0%), var(--box-l, 80%), var(--box-a-left, 1)); stroke: black; stroke-width: 0.025; stroke-opacity: var(--box-a);"/> <!-- left -->
+                <polygon points="4,1 2,2 2,4 4,3" style="fill: hsla(var(--box-h, 0), var(--box-s, 0%), calc(var(--box-l, 80%) - 10%), var(--box-a-right, 1)); stroke: black; stroke-width: 0.025; stroke-opacity: var(--box-a);"/> <!-- right -->
             </g>
         </defs>
 
@@ -25,7 +25,10 @@
                          --box-h: ${attractionL.colour.h};
                          --box-s: ${attractionL.colour.s}%;
                          --box-l: ${attractionL.colour.l}%;
-                         --box-a: ${getBoxOpacity(attractionL.code, relationshipL.code, orientationL.code)};
+                         --box-a: ${isSelected(attractionL.code, relationshipL.code, orientationL.code) ? 1 : 0.05};
+                         --box-a-top: ${isSelectedTop(attractionL.code, relationshipL.code, orientationL.code) ? 1 : 0.05};
+                         --box-a-left: ${isSelectedLeft(attractionL.code, relationshipL.code, orientationL.code) ? 1 : 0.05};
+                         --box-a-right: ${isSelectedRight(attractionL.code, relationshipL.code, orientationL.code) ? 1 : 0.05};
                      `"
                     />
                 </template>
@@ -84,21 +87,14 @@
             attraction: {},
             relationship: {},
             orientation: {},
-            animate: { type: Boolean },
         },
         data() {
             return {
                 attractionTypes, relationshipTypes, orientationTypes,
-                sequence: 0,
             }
         },
         mounted() {
             this.$el.setAttribute('viewBox', this.viewBox);
-            if (this.animate) {
-                setInterval(_ => {
-                    this.sequence = (this.sequence + 1) % 4;
-                }, 1000);
-            }
         },
         methods: {
             isSelected(attraction, relationship, orientation) {
@@ -106,34 +102,26 @@
                     && (this.relationship === null || this.relationship === relationship)
                     && (this.orientation === null || this.orientation === orientation);
             },
-            selectedPlanes(attraction, relationship, orientation) {
-                const planes = [];
-
-                if (attraction && this.attraction === attraction) {
-                    planes.push(1);
-                }
-
-                if (relationship && this.relationship === relationship) {
-                    planes.push(2);
-                }
-
-                if (orientation && this.orientation === orientation) {
-                    planes.push(3);
-                }
-
-                return planes;
+            isSelectedTop(attraction, relationship, orientation) {
+                const last = this.attractionTypes.types[this.lenA - 1].code;
+                return this.isSelected(attraction, relationship, orientation) || (
+                    attraction !== null && relationship !== null && orientation !== null
+                    && attraction === last && relationship === this.relationship && orientation === this.orientation
+                );
             },
-            getBoxOpacity(attraction, relationship, orientation) {
-                if (this.isSelected(attraction, relationship, orientation)) {
-                    return 1;
-                }
-
-                const planes = this.selectedPlanes(attraction, relationship, orientation);
-                if (planes.includes(this.sequence)) {
-                    return 1;
-                }
-
-                return 0.05;
+            isSelectedLeft(attraction, relationship, orientation) {
+                const last = this.relationshipTypes.types[this.lenB - 1].code;
+                return this.isSelected(attraction, relationship, orientation) || (
+                    attraction !== null && relationship !== null && orientation !== null
+                    && attraction === this.attraction && relationship === last && orientation === this.orientation
+                );
+            },
+            isSelectedRight(attraction, relationship, orientation) {
+                const last = this.orientationTypes.types[this.lenC - 1].code;
+                return this.isSelected(attraction, relationship, orientation) || (
+                    attraction !== null && relationship !== null && orientation !== null
+                    && attraction === this.attraction && relationship === this.relationship && orientation === last
+                );
             },
         },
         computed: {
