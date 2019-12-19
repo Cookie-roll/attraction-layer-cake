@@ -41,7 +41,6 @@
         },
         mounted() {
             window.addEventListener('keydown', this.handleKey, false);
-            this.$refs.col0.focus();
         },
         destroyed() {
             window.removeEventListener('keydown', this.handleKey, false);
