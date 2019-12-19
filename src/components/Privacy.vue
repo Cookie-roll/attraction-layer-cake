@@ -1,11 +1,7 @@
 <template>
     <div class="container">
+        <Title link/>
         <Twemoji>
-            <h1 class="mb-3">
-                <router-link :to="{name: 'home'}">
-                    {{ $t('title') }}
-                </router-link>
-            </h1>
             <h2>
                 🔒 {{ $t('privacy.header') }}
             </h2>
@@ -29,6 +25,9 @@
 </template>
 
 <script>
+    import Title from './Title.vue';
+
     export default {
+        components: { Title },
     }
 </script>

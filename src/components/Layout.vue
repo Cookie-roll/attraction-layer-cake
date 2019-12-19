@@ -2,17 +2,10 @@
     <div class="flex-grow-1 p-4">
         <div class="row">
             <div class="col-12 d-xl-none">
-                <h1 class="mb-3">{{ $t('title') }}</h1>
+                <Title :link="linkTitle"/>
             </div>
             <div class="col-12 col-sm-6 col-xl-3 offset-xl-0 sticky-top bg-white border-xs-bottom pb-3 h-100">
-                <h1 class="mb-3 d-none d-xl-block">
-                    <router-link :to="{name: 'home'}" v-if="linkTitle">
-                        {{ $t('title') }}
-                    </router-link>
-                    <span v-else>
-                        {{ $t('title') }}
-                    </span>
-                </h1>
+                <Title classes="mb-3 d-none d-xl-block" :link="linkTitle"/>
                 <slot name="side"></slot>
             </div>
             <div class="col-12 col-sm-6 col-xl-3">
@@ -29,7 +22,10 @@
 </template>
 
 <script>
+    import Title from './Title.vue';
+
     export default {
+        components: { Title },
         props: {
             linkTitle: { type: Boolean },
         }

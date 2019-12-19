@@ -5,32 +5,14 @@ import VueI18n from 'vue-i18n';
 import VueRouter from 'vue-router';
 import router from './router';
 import translationsFallback from './translations/en';
-import VueMatomo from "vue-matomo";
+import VueMatomo from 'vue-matomo';
+import Session from './session';
 
 Vue.config.productionTip = false;
 
-class Session {
-    static set(key, value) {
-        localStorage.setItem(key, JSON.stringify(value));
-    }
-
-    static get(key) {
-        const value = localStorage.getItem(key);
-
-        return key === null ? null : JSON.parse(value);
-    }
-
-    static has(key) {
-        return localStorage.getItem(key) !== null;
-    }
-
-    static remove(key) {
-        localStorage.removeItem(key);
-    }
-}
-
 const languages = {
     en: { code: 'GB', name: 'English' },
+    pl: { code: 'PL', name: 'Polski' },
 };
 
 const selectLanguage = (preferred, available) => {
@@ -92,6 +74,8 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 Vue.component('Twemoji', Twemoji);
+
+Vue.prototype.$eventHub = new Vue();
 
 const el = document.createElement('div');
 document.body.appendChild(el);

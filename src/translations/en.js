@@ -1,18 +1,17 @@
 module.exports = {
     'title': 'Attraction Layer Cake',
     'description': 'Our sexuality is more complex than just straight/bi/gay. Here you can describe it on three axes: attraction type, relationship type and orientation type.',
-    'keywords': 'attraction, relationship, orientation, sexuality, sexual orientation, scale, kinsey scale, asexual, monogamy, polyamory',
+    'keywords': 'attraction, relationship, orientation, sexuality, sexual orientation, scale, kinsey scale, asexuality, asexual, monogamy, polyamory',
 
     'footer.author': 'Made with ❤ by',
     'footer.base': 'based on',
     'footer.diagram': 'a diagram by Luna Rudd',
-    'footer.by': 'by',
     'footer.donate': 'Buy me a beer',
     'footer.source': 'Source code',
 
-    'attraction.label': 'Attraction types',
+    'attraction.label': 'Attraction type',
     'attraction.b.name': 'Aromantic asexuality',
-    'attraction.b.description': 'No sexual or romantic attraction, only platonic or æstetic attraction',
+    'attraction.b.description': 'No sexual or romantic attraction, only platonic or æstetic attraction.',
     'attraction.g.name': 'Romantic asexuality',
     'attraction.g.description': 'Open to romance, certain forms of touch, and deep emotional bonds, ' +
                                 'but not interested in sexual relations.',
@@ -27,9 +26,9 @@ module.exports = {
                                 'However other components are essential to the relationship, such as bonding or companionship.',
     'attraction.c.name': 'Aromantic sexuality',
     'attraction.c.description': 'The purpose of relationships is primarily sexuality. ' +
-    'Romance is not specifically desired.',
+                                'Romance is not specifically desired.',
 
-    'relationship.label': 'Relationship types',
+    'relationship.label': 'Relationship type',
     'relationship.A.name': 'Strictly monogamous',
     'relationship.A.description': 'Only mate with one person at a time ' +
                                     'with the goal of developing singular life-long partnership.',
@@ -48,7 +47,7 @@ module.exports = {
     'relationship.E.description': 'Desires different simultaneous relationships with different partners ' +
                                     'in order to meet different needs or freely express attraction to multiple individuals.',
 
-    'orientation.label': 'Orientation types',
+    'orientation.label': 'Orientation type',
     'orientation.0.name': 'Exclusively heterosexual',
     'orientation.0.description': 'Attracted exclusively to a gender(s) different than one\'s own.',
     'orientation.1.name': 'Predominantly heterosexual',

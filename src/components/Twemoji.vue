@@ -13,6 +13,8 @@
     export default {
         mounted() {
             this.update();
+
+            this.$eventHub.$on('update-twemoji', this.update);
         },
         methods: {
             update() {
