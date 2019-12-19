@@ -4,7 +4,7 @@
             <div class="col-12 d-sm-none">
                 <h1 class="mb-3">{{ $t('title') }}</h1>
             </div>
-            <div class="col-12 col-md-6 col-xl-3 offset-xl-0 sticky-top bg-white border-xs-bottom pb-3">
+            <div class="col-12 col-sm-6 col-xl-3 offset-xl-0 sticky-top bg-white border-xs-bottom pb-3">
                 <h1 class="mb-3 d-none d-sm-block">
                     <router-link :to="{name: 'home'}" v-if="linkTitle">
                         {{ $t('title') }}
@@ -15,13 +15,13 @@
                 </h1>
                 <slot name="side"></slot>
             </div>
-            <div class="col-12 col-md-6 col-xl-3">
+            <div class="col-12 col-sm-6 col-xl-3">
                 <slot name="col1"></slot>
             </div>
-            <div class="col-12 col-md-6 offset-md-6 col-xl-3 offset-xl-0">
+            <div class="col-12 col-sm-6 offset-sm-6 col-xl-3 offset-xl-0">
                 <slot name="col2"></slot>
             </div>
-            <div class="col-12 col-md-6 offset-md-6 col-xl-3 offset-xl-0">
+            <div class="col-12 col-sm-6 offset-sm-6 col-xl-3 offset-xl-0">
                 <slot name="col3"></slot>
             </div>
         </div>

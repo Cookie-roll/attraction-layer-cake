@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h2 class="mt-3 mt-sm-0 mb-3">{{ $t(`${options.label}.label`) }}</h2>
+        <h2 class="mt-3 mt-xl-0 mb-3">{{ $t(`${options.label}.label`) }}</h2>
         <div class="list-group" ref="list" tabindex="0">
             <a href :class="['list-group-item list-group-item-action', {active: v === o.code, disabled}]"
                v-for="o in options.types"
