@@ -66,7 +66,7 @@ module.exports = {
     'orientation.6.name': 'Exclusively homosexual',
     'orientation.6.description': 'Exclusively attracted to people whose gender matches one\'s own.',
 
-    'show.own': 'Create your own cake.',
+    'show.own': 'Select your own piece',
 
     'url.empty': 'Select on option in all three columns to generate a link.',
     'url.copy': 'Copy to clipboard',
