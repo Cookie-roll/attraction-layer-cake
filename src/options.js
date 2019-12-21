@@ -1,4 +1,4 @@
-export const attractionTypes = {
+module.exports.attractionTypes = {
     label: 'attraction',
     types: [
         { code: 'b', label: 'Black', colour: {h: 0, s: 0, l: 15}, },
@@ -10,7 +10,7 @@ export const attractionTypes = {
     ],
 };
 
-export const relationshipTypes = {
+module.exports.relationshipTypes = {
     label: 'relationship',
     types: [
         { code: 'A', },
@@ -21,7 +21,7 @@ export const relationshipTypes = {
     ],
 };
 
-export const orientationTypes = {
+module.exports.orientationTypes = {
     label: 'orientation',
     types: [
         { code: '0', },

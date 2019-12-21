@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const translationsFallback = require('./src/translations/en');
 const dotenv = require('dotenv');
+const { attractionTypes, relationshipTypes, orientationTypes } = require('./src/options');
 
 dotenv.config({path: '.env'});
 
@@ -51,5 +52,25 @@ Encore
         { from: './src/images/banners/*', to: '[name].[ext]' },
     ]))
 ;
+
+for (let attraction of attractionTypes.types) {
+    for (let relationship of relationshipTypes.types) {
+        for (let orientation of orientationTypes.types) {
+            const code = `${attraction.code}${relationship.code}${orientation.code}`;
+            Encore.addPlugin(new HtmlWebpackPlugin({
+                template: './src/index.ejs',
+                filename: `${code}.html`,
+                templateParameters: {
+                    'title': code + ' • ' + translationsFallback['title'],
+                    'description': translationsFallback['description'],
+                    'keywords': translationsFallback['keywords'],
+                    'baseUrl': `${baseUrl}/${code}`,
+                    'banner': `${baseUrl}/${code}.png`,
+                },
+                favicon: './src/images/favicon.png',
+            }))
+        }
+    }
+}
 
 module.exports = Encore.getWebpackConfig();
