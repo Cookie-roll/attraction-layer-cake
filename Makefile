@@ -13,5 +13,6 @@ start:
 stop:
 	node_modules/.bin/avris-daemonise stop webserver
 
-deploy: install
+deploy:
+	yarn install --prod
 	node_modules/.bin/encore production

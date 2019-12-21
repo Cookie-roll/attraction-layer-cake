@@ -18,6 +18,8 @@ const getPort = function (port) {
 
 const baseUrl = `${process.env.SCHEME}://${process.env.DOMAIN}${getPort(process.env.PORT)}`;
 
+const banners = [];
+
 Encore
     .setOutputPath('build/')
     .setPublicPath('/')
@@ -45,7 +47,8 @@ Encore
         'baseUrl': JSON.stringify(`${baseUrl}`),
     }))
     .addPlugin(new CopyWebpackPlugin([
-        { from: './src/images/banner.png', to: 'banner.png' }
+        { from: './src/images/banner.png', to: 'banner.png' },
+        { from: './src/images/banners/*', to: '[name].[ext]' },
     ]))
 ;
 

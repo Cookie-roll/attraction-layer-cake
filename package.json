@@ -4,7 +4,8 @@
         "dev-server": "encore dev-server",
         "dev": "encore dev",
         "watch": "encore dev --watch",
-        "build": "encore production"
+        "build": "encore production",
+        "images": "node -r esm src/generateImages.js"
     },
     "dependencies": {
         "@symfony/webpack-encore": "^0.28.0",
@@ -14,9 +15,10 @@
         "clipboard": "^2.0.4",
         "copy-webpack-plugin": "^4.0",
         "dotenv": "^6.2.0",
+        "esm": "^3.2.25",
         "html-webpack-plugin": "^3.2.0",
         "imports-loader": "^0.8.0",
-        "node-sass": "^4.11.0",
+        "node-sass": "^4.13.0",
         "postcss-loader": "^3.0.0",
         "sass-loader": "^7.0.3",
         "twemoji": "^11.0.1",
@@ -26,5 +28,8 @@
         "vue-matomo": "^3.9.1-2",
         "vue-router": "^3.0.1",
         "vue-template-compiler": "^2.6"
+    },
+    "devDependencies": {
+        "puppeteer": "^2.0.0"
     }
 }

@@ -11,14 +11,17 @@ const codePart = (options) => `[${options.types.map(o => o.code).join('')}]`;
 const codePath = `:attraction(${codePart(attractionTypes)}):relationship(${codePart(relationshipTypes)}):orientation(${codePart(orientationTypes)})`;
 const localePath = `:locale(${Object.keys(languages).join('|')})`;
 
+const routes = [];
+routes.push({ name: 'home', path: '/', component: Home });
+routes.push({ name: 'show', path: '/' + codePath, component: Show });
+if (process.env.NODE_ENV !== 'production') {
+    routes.push({name: 'showImage', path: `/image/${codePath }-:locale(en|pl)`, component: ShowImage});
+}
+routes.push({ name: 'privacy', path: '/privacy', component: Privacy });
+routes.push({ path: '*', component: NotFound });
+
 export default new VueRouter({
-    routes: [
-        { name: 'home', path: '/', component: Home },
-        { name: 'show', path: '/' + codePath, component: Show },
-        { name: 'showImage', path: `/image/${codePath }-:locale(en|pl)`, component: ShowImage },
-        { name: 'privacy', path: '/privacy', component: Privacy },
-        { path: '*', component: NotFound },
-    ],
+    routes,
     mode: 'history',
     scrollBehavior (to, from, savedPosition) {
         return { x: 0, y: 0 };
