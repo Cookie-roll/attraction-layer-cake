@@ -50,6 +50,7 @@ Encore
     .addPlugin(new CopyWebpackPlugin([
         { from: './src/images/banner.png', to: 'banner.png' },
         { from: './src/images/banners/*', to: '[name].[ext]' },
+        { from: './.htaccess', to: '.htaccess' },
     ]))
 ;
 
@@ -65,7 +66,7 @@ for (let attraction of attractionTypes.types) {
                     'description': translationsFallback['description'],
                     'keywords': translationsFallback['keywords'],
                     'baseUrl': `${baseUrl}/${code}`,
-                    'banner': `${baseUrl}/${code}.png`,
+                    'banner': `${baseUrl}/${code}.jpg`,
                 },
                 favicon: './src/images/favicon.png',
             }))
