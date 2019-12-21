@@ -40,32 +40,5 @@
                 attractionTypes, relationshipTypes, orientationTypes
             }
         },
-        methods: {
-            clear() {
-                this.attraction = null;
-                this.relationship = null;
-                this.orientation = null;
-            },
-        },
-        computed: {
-            filled() {
-                return this.attraction !== null
-                    && this.relationship !== null
-                    && this.orientation !== null;
-            },
-            code() {
-                return `${this.attraction}${this.relationship}${this.orientation}`;
-            },
-            url() {
-                return this.filled
-                    ? `${baseUrl}/${this.code}`
-                    : null;
-            },
-        },
-        beforeRouteUpdate (to, from, next) {
-            // TODO
-            console.log(to);
-            next();
-        },
     }
 </script>
