@@ -16,3 +16,4 @@ stop:
 deploy:
 	yarn install --prod
 	node_modules/.bin/encore production
+	cp .htaccess build/.
