@@ -71,6 +71,7 @@ module.exports = {
     'url.copy': 'Copy to clipboard',
 
     'share.text': 'My attraction type is {code}, what\'s yours?',
+    'share.text.rich': 'My attraction type is <strong>{code}</strong>.<br/>What\'s yours?',
     'share.facebook': 'Share on Facebook',
     'share.twitter': 'Share on Twitter',
 

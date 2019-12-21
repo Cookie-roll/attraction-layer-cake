@@ -2,10 +2,11 @@
     <div>
         <h2 class="mt-3 mt-xl-0 mb-3">{{ $t(`${options.label}.label`) }}</h2>
         <div class="list-group" ref="list" tabindex="0">
-            <a href :class="['list-group-item list-group-item-action', {active: v === o.code, disabled}]"
+            <a href :class="['list-group-item list-group-item-action', {active: !onlySelected && v === o.code, disabled: disabled && !onlySelected}]"
                v-for="o in options.types"
                @click.prevent="update(o.code)"
                ref="item"
+               v-if="!onlySelected || o.code === v"
             >
                 <h3 class="h5 font-weight-bold">
                     {{ o.label || o.code }} – {{ $t(`${options.label}.${o.code}.name`) }}
@@ -26,6 +27,7 @@
             value: {required: true},
             options: {required: true},
             disabled: {type: Boolean},
+            onlySelected: {type: Boolean},
         },
         data() {
             return {

@@ -7,13 +7,9 @@ import router from './router';
 import translationsFallback from './translations/en';
 import VueMatomo from 'vue-matomo';
 import Session from './session';
+import languages from './languages';
 
 Vue.config.productionTip = false;
-
-const languages = {
-    en: { code: 'GB', name: 'English' },
-    pl: { code: 'PL', name: 'Polski' },
-};
 
 const selectLanguage = (preferred, available) => {
     for (let p of preferred) {

@@ -71,6 +71,7 @@ module.exports = {
     'url.copy': 'Skopiuj do schowka',
 
     'share.text': 'Mój rodzaj pociągu to {code}, a Twój?',
+    'share.text.rich': 'Mój rodzaj pociągu to <strong>{code}</strong>.<br/>A Twój?',
     'share.facebook': 'Udostępnij na Facebooku',
     'share.twitter': 'Udostępnij na Twitterze',
 
