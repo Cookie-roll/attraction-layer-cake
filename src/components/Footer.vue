@@ -19,6 +19,10 @@
                 <a href="https://paypal.me/AndreAvris" target="_blank" rel="noopener" class="text-nowrap mx-2">
                     🍺 {{ $t('footer.donate') }}
                 </a>
+                <a href="https://spectrum.avris.it" target="_blank" rel="noopener" class="text-nowrap mx-2">
+                    <img src="https://spectrum.avris.it/favicon.png" class="emoji"/>
+                    {{ $t('otherProjects.spectrum') }}
+                </a>
             </Twemoji>
         </div>
     </footer>
