@@ -1,9 +1,8 @@
 <template>
     <div :class="['dropdown', classes]">
-        <a :class="['btn', buttonClasses]">
+        <a :class="['btn', buttonClasses, 'dropdown-toggle']">
             <Flag :code="$languages[$i18n.locale].code"/>
             {{ $languages[$i18n.locale].name }}
-            ⯆
         </a>
         <div class="dropdown-menu shadow">
             <a class="dropdown-item" href="#" @click.prevent="setLanguage(key)" v-for="(language, key) in $languages">
