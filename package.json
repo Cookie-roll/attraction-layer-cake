@@ -1,4 +1,6 @@
 {
+    "name": "avris-cake",
+    "author": "Andrea Prusinowski <andrea@avris.it>",
     "license": "MIT",
     "scripts": {
         "dev-server": "encore dev-server",

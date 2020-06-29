@@ -13,7 +13,7 @@
             </p>
             <p>
                 {{ $t('privacy.contact') }}
-                <a href="mailto:andre@avris.it" target="_blank" rel="noopener">✉ andre@avris.it</a>
+                <a href="mailto:andrea@avris.it" target="_blank" rel="noopener">✉ andrea@avris.it</a>
             </p>
             <p>
                 <router-link :to="{name: 'home'}">
