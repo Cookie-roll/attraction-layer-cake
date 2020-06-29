@@ -15,7 +15,7 @@ const routes = [];
 routes.push({ name: 'home', path: '/', component: Home });
 routes.push({ name: 'show', path: '/' + codePath, component: Show });
 if (process.env.NODE_ENV !== 'production') {
-    routes.push({name: 'showImage', path: `/image/${codePath }-:locale(en|pl)`, component: ShowImage});
+    routes.push({name: 'showImage', path: `/image/${codePath }-${localePath}`, component: ShowImage});
 }
 routes.push({ name: 'privacy', path: '/privacy', component: Privacy });
 routes.push({ path: '*', component: NotFound });
