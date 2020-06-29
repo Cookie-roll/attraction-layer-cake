@@ -1,5 +1,5 @@
 module.exports = {
-    'title': 'Ciasto Warstwowe Pociągu',
+    'title': 'Przekładaniec pociągu',
     'description': 'Nasza seksualność jest bardziej złożona niż tylko podział hetero/bi/homo. Tutaj możesz opisać ją na trech osiach: typu pociągu, typu związki, oraz orientacji.',
     'keywords': 'pociąg, związek, orientacja, seksaulność, orientacja seksualna, skala, skala kinsey\'a, aseksualność, aseksualny, monogamia, polyamoria',
 

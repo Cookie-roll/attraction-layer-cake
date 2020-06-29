@@ -79,6 +79,7 @@ module.exports = {
     'privacy.noData': 'All the information about the options you have selected are encoded in the URL and are not stored anywhere.',
     'privacy.tracking': 'I use Matomo to analyse traffic on the website. All visitor data anonymised.',
     'privacy.contact': 'If you have any questions or requests regarding your personal data, feel free to contact me at',
+    'privacy.home': 'Back to homepage',
 
     'otherProjects.spectrum': 'Sexuality Spectrum',
 };
