@@ -1,7 +1,7 @@
-import puppeteer from 'puppeteer';
-import dotenv from 'dotenv';
-import languages from './languages';
-import { attractionTypes, relationshipTypes, orientationTypes } from './options';
+const puppeteer = require('puppeteer');
+const dotenv = require('dotenv');
+const languages = require('./languages');
+const { attractionTypes, relationshipTypes, orientationTypes } = require( './options');
 
 dotenv.config({path: '.env'});
 
