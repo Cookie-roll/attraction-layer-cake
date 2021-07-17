@@ -1,5 +1,5 @@
 <template>
-    <footer class="border-top p-4 text-center d-md-flex justify-content-between bg-light">
+    <footer class="border-top p-4 px-5 text-center d-md-flex justify-content-between bg-light">
         <div>
             <Twemoji>
                 {{ $t('footer.author') }}

@@ -50,6 +50,7 @@ Encore
     .addPlugin(new CopyWebpackPlugin([
         { from: './src/images/banner.png', to: 'banner.png' },
         { from: './src/images/banners/*', to: '[name].[ext]' },
+        { from: './src/arc-sw.js', to: 'arc-sw.js' },
     ]))
 ;
 
