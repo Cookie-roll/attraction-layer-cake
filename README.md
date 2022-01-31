@@ -11,4 +11,4 @@
  
  * **Author:** Andrea Prusinowski [(Avris.it)](https://avris.it)
  * **Based on:** [a diagram by Luna Rudd](https://imgur.com/gallery/YAGLE)
- * **Licence:** [MIT](https://mit.avris.it)
+ * **Licence:** [OQL](https://oql.avris.it/license?c=Andrea%20Prusinowsku%7Chttps://avris.it)
