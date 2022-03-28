@@ -9,6 +9,6 @@
     
 ## Copyright
  
- * **Author:** Andrea Prusinowski [(Avris.it)](https://avris.it)
+ * **Author:** Andrea Vos [(Avris.it)](https://avris.it)
  * **Based on:** [a diagram by Luna Rudd](https://imgur.com/gallery/YAGLE)
- * **Licence:** [OQL](https://oql.avris.it/license?c=Andrea%20Prusinowsku%7Chttps://avris.it)
+ * **Licence:** [OQL](https://oql.avris.it/license?c=Andrea%20Vos%7Chttps://avris.it)

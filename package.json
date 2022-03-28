@@ -1,7 +1,7 @@
 {
     "name": "avris-cake",
-    "author": "Andrea Prusinowski <andrea@avris.it>",
-    "license": "MIT",
+    "author": "Andrea Vos <andrea@avris.it>",
+    "license": "https://oql.avris.it/license?c=Andrea%20Vos%7Chttps://avris.it",
     "scripts": {
         "dev-server": "encore dev-server",
         "dev": "encore dev",
