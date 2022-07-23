@@ -77,7 +77,7 @@ module.exports = {
 
     'privacy.header': 'Datenschutz',
     'privacy.noData': 'Alle Informationen über die von Ihnen gewählten Optionen sind in der URL kodiert und werden nirgendwo gespeichert.',
-    'privacy.tracking': 'Ich verwende Matomo, um den Verkehr auf der Website zu analysieren. Alle Besucherdaten sind anonymisiert.',
+    'privacy.tracking': 'Ich verwende Plausible, um den Verkehr auf der Website zu analysieren. Alle Besucherdaten sind anonymisiert.',
     'privacy.contact': 'Wenn Sie Fragen oder Wünsche in Bezug auf Ihre persönlichen Daten haben, können Sie mich unter folgender Adresse kontaktieren',
     'privacy.home': 'Zurück zur Startseite',
 

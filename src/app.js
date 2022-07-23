@@ -5,7 +5,7 @@ import VueI18n from 'vue-i18n';
 import VueRouter from 'vue-router';
 import router from './router';
 import translationsFallback from './translations/en';
-import VueMatomo from 'vue-matomo';
+import { VuePlausible } from 'vue-plausible'
 import Session from './session';
 import languages from './languages';
 
@@ -62,11 +62,10 @@ loadLanguageAsync(
 Vue.use(VueRouter);
 
 if (process.env.NODE_ENV === 'production') {
-    Vue.use(VueMatomo, {
-        host: 'https://matomo.avris.it',
-        siteId: 18,
-        router: router,
-    });
+    Vue.use(VuePlausible, {
+        domain: 'cake.avris.it',
+        apiHost: 'https://plausible.avris.it',
+    })
 }
 
 Vue.component('Twemoji', Twemoji);

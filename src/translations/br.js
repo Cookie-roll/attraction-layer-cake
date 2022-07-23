@@ -77,7 +77,7 @@ module.exports = {
 
   'privacy.header': 'Privacidade',
   'privacy.noData': 'Todas as informações a respeito das opções que você selecionou estão presentes unicamente no endereço da URL e não são armazenadas em lugar algum.',
-  'privacy.tracking': 'O software Matomo é utilizado para analisar o tráfego da página. Todas as informações de usuários são anonimizadas.',
+  'privacy.tracking': 'O software Plausible é utilizado para analisar o tráfego da página. Todas as informações de usuários são anonimizadas.',
   'privacy.contact': 'Se você tiver alguma pergunta ou solicitação a respeito de seus dados pessoais, sinta-se livre para entrar em contrato no',
   'privacy.home': 'Voltar para a home',
 
