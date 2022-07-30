@@ -4,6 +4,7 @@
             <router-view/>
         </main>
         <Footer/>
+        <script defer data-domain="cake.avris.it" src="https://plausible.avris.it/js/plausible.js"></script>
     </div>
 </template>
 

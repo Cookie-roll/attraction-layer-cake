@@ -61,12 +61,12 @@ loadLanguageAsync(
 
 Vue.use(VueRouter);
 
-if (process.env.NODE_ENV === 'production') {
-    Vue.use(VuePlausible, {
-        domain: 'cake.avris.it',
-        apiHost: 'https://plausible.avris.it',
-    })
-}
+//if (process.env.NODE_ENV === 'production') {
+//     Vue.use(VuePlausible, {
+//         domain: 'cake.avris.it',
+//         apiHost: 'https://plausible.avris.it',
+//     })
+//}
 
 Vue.component('Twemoji', Twemoji);
 
