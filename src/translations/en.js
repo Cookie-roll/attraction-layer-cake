@@ -19,7 +19,7 @@ module.exports = {
     'attraction.o.description': 'Does not experience sexual attraction, but comfortable having ' +
                                 'sexual relations for distinct purposes (child bearing, pleasing their partners, etc.)',
     'attraction.p.name': 'Secondary sexuality',
-    'attraction.p.description': 'Romantic, platonic and æstetic attraction are established easily. ' +
+    'attraction.p.description': 'Romantic, platonic and aesthetic attraction are established easily. ' +
                                 'Sexual attraction develops over the course of relationships, but not immediately.',
     'attraction.r.name': 'Primary sexuality',
     'attraction.r.description': 'Sexual attraction exists immediately, and may or may not be acted upon. ' +
