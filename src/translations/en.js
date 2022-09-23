@@ -11,7 +11,7 @@ module.exports = {
 
     'attraction.label': 'Attraction type',
     'attraction.b.name': 'Aromantic asexuality',
-    'attraction.b.description': 'No sexual or romantic attraction, only platonic or æstetic attraction.',
+    'attraction.b.description': 'No sexual or romantic attraction, only platonic or æsthetic attraction.',
     'attraction.g.name': 'Romantic asexuality',
     'attraction.g.description': 'Open to romance, certain forms of touch, and deep emotional bonds, ' +
                                 'but not interested in sexual relations.',
