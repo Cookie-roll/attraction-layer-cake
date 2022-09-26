@@ -1,7 +1,8 @@
 module.exports = {
     en: { code: 'GB', name: 'English' },
-    fr: { code: 'FR', name: 'Français'},
+    de: { code: 'DE', name: 'Deutsch' },
+    fr: { code: 'FR', name: 'Français' },
+    nl: { code: 'NL', name: 'Nederlands' },
     pl: { code: 'PL', name: 'Polski' },
-    br: { code: 'BR', name: 'Português Brasileiro'},
-    de: { code: 'DE', name: 'Deutsch'},
+    br: { code: 'BR', name: 'Português Brasileiro' },
 };
