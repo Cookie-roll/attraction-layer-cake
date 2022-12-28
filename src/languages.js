@@ -5,4 +5,5 @@ module.exports = {
     nl: { code: 'NL', name: 'Nederlands' },
     pl: { code: 'PL', name: 'Polski' },
     br: { code: 'BR', name: 'Português Brasileiro' },
+    es: { code: 'ES', name: 'Español' },
 };
