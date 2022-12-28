@@ -3,7 +3,7 @@
         <div>
             <Twemoji>
                 {{ $t('footer.author') }}
-                <a href="https://avris.it" target="_blank" rel="noopener" class="text-nowrap">Avris 🇪🇺 🏳️‍🌈</a>
+                <a href="https://avris.it" target="_blank" rel="noopener" class="text-nowrap">Andrea Vos</a>
                 {{ $t('footer.base') }}
                 <a href="https://www.facebook.com/lunarudd33/posts/10208509451606031" target="_blank" rel="noopener" class="text-nowrap">💡 {{ $t('footer.diagram') }}</a> 😍
             </Twemoji>
@@ -20,7 +20,7 @@
                     🍺 {{ $t('footer.donate') }}
                 </a>
                 <a href="https://spectrum.avris.it" target="_blank" rel="noopener" class="text-nowrap mx-2">
-                    <img src="https://spectrum.avris.it/favicon.png" class="emoji"/>
+                    <img src="https://spectrum.avris.it/favicon.png" class="emoji" alt=""/>
                     {{ $t('otherProjects.spectrum') }}
                 </a>
             </Twemoji>
