@@ -20,7 +20,10 @@
             update() {
                 setTimeout(_ => {
                     if (this.$refs.source && this.$refs.target) {
-                        this.$refs.target.innerHTML = twemoji.parse(this.$refs.source.innerHTML);
+                        this.$refs.target.innerHTML = twemoji.parse(this.$refs.source.innerHTML, {
+                            // default was https://twemoji.maxcdn.com/v/14.0.2/ but it's down
+                            base: 'https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/',
+                        });
                     }
                 }, 100); // TODO
             },
