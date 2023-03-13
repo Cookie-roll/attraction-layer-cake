@@ -3,9 +3,7 @@
         <template v-slot:side>
             <Cake :attraction="attraction" :relationship="relationship" :orientation="orientation"/>
             <router-link :to="{name: 'home'}" class="btn btn-outline-primary btn-block btn-lg">
-                <Twemoji>
-                    ➕ {{ $t('show.own') }}
-                </Twemoji>
+                ➕ {{ $t('show.own') }}
             </router-link>
         </template>
 

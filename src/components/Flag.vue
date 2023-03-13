@@ -1,7 +1,5 @@
 <template>
-    <Twemoji ref="twemoji">
-        {{getIcon(code)}}
-    </Twemoji>
+    <span>{{getIcon(code)}}</span>
 </template>
 
 <script>
@@ -20,10 +18,5 @@
                 return chars[code[0]] + chars[code[1]];
             },
         },
-        watch: {
-            code() {
-                this.$refs.twemoji.update();
-            }
-        }
     };
 </script>

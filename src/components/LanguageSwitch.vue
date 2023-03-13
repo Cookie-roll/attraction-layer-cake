@@ -27,7 +27,6 @@
             setLanguage(key) {
                 this.$loadLanguage(key).then(_ => {
                     Session.set('language', key);
-                    this.$eventHub.$emit('update-twemoji');
                 });
             },
         }

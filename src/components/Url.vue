@@ -5,7 +5,7 @@
                 <input v-model="url" readonly class="form-control" id="url">
                 <div class="input-group-append">
                     <button class="btn btn-outline-secondary btn-copy" data-clipboard-target="#url" :title="$t('url.copy')">
-                        <Twemoji>📋</Twemoji>
+                        📋
                     </button>
                 </div>
             </div>

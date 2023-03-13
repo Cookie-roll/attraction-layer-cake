@@ -1,6 +1,5 @@
 import Vue from 'vue';
 import App from './components/App.vue';
-import Twemoji from './components/Twemoji.vue';
 import VueI18n from 'vue-i18n';
 import VueRouter from 'vue-router';
 import router from './router';
@@ -67,8 +66,6 @@ Vue.use(VueRouter);
 //         apiHost: 'https://plausible.avris.it',
 //     })
 //}
-
-Vue.component('Twemoji', Twemoji);
 
 Vue.prototype.$eventHub = new Vue();
 
